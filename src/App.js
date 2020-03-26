@@ -1,8 +1,11 @@
 import React from 'react';
+import Routes from './routes'
 
+import GlobalStyles from './globalStyles'
 const App = () => (
     <div className="App">
-      <h1>App</h1>
+        <Routes />
+        <GlobalStyles/>
     </div>
   );
 
