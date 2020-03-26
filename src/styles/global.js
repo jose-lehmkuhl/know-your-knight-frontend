@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
     *   {
         margin: 0;
@@ -15,7 +15,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        font-family: 'Baloo 2', cursive;
+        font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }
 

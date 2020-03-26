@@ -1,12 +1,14 @@
 import React from 'react';
 import Routes from './routes'
+import { Paper } from '@material-ui/core'
 
-import GlobalStyles from './globalStyles'
+import GlobalStyles from './styles/global'
+import { AppWrapper } from './styles/App'
 const App = () => (
-    <div className="App">
+    <AppWrapper className="App" elevation={6}>
         <Routes />
         <GlobalStyles/>
-    </div>
+    </AppWrapper>
   );
 
 export default App;
