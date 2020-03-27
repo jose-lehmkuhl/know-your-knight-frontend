@@ -1,6 +1,5 @@
 import React from 'react';
 import Routes from './routes'
-import { Paper } from '@material-ui/core'
 
 import GlobalStyles from './styles/global'
 import { AppWrapper } from './styles/App'
