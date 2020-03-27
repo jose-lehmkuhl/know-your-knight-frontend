@@ -5,8 +5,8 @@ import { faChessKnight } from '@fortawesome/free-solid-svg-icons'
 
 import { CellContainer } from '../styles'
 
-const Cell = ({color, withKnight, destination}) =>
-    <CellContainer justify="center" color={color.toString()} destination={destination}>
+const Cell = ({color, withKnight, destination, setKnightPosition}) =>
+    <CellContainer justify="center" color={color.toString()} destination={destination} onClick={setKnightPosition}>
         <Grid container justify="center">
             {withKnight ? <FontAwesomeIcon icon={faChessKnight} size="3x" /> : ''}
         </Grid>
