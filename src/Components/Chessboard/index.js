@@ -4,11 +4,9 @@ import {  Wrapper } from './styles'
 
 import Row from './componets/Row'
 
-const Chessboard = ({knightPosition,destinations}) => {
+const Chessboard = ({ showDestinations }) => {
     const [getPosition, setPosition] = useState(null)
     const [getDestinations, setDestinations] = useState([])
-
-
     useEffect(() => {
         const fetchFromApi = async () => {
             if (getPosition === null) return
@@ -21,6 +19,12 @@ const Chessboard = ({knightPosition,destinations}) => {
 
     }, [getPosition])
 
+    const getFilteredDestinations = (rowNumber) => {
+        if (!showDestinations) return []
+
+        return getDestinations.filter(cell => cell.includes(`${rowNumber}`))
+    }
+
     const renderRows = () => {
         const rows = []
         for (let i = 8; i > 0; i--) {
@@ -28,7 +32,7 @@ const Chessboard = ({knightPosition,destinations}) => {
                 <Row
                     key={i}
                     knightPosition={getPosition}
-                    destinations={getDestinations.filter(cell => cell.includes(`${i}`))}
+                    destinations={getFilteredDestinations(i)}
                     rowNumber={i}
                     setKnightPosition={position => setPosition(position)}
                 />
