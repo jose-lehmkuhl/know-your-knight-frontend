@@ -5,7 +5,7 @@ import Cell from './Cell'
 const Row = ({rowNumber,knightPosition, destinations, setKnightPosition}) => {
 
 const renderRow = () => {
-    const cellLetters = ['A','B','C','D','E','F','G']
+    const cellLetters = ['A','B','C','D','E','F','G','H']
     return cellLetters.map((letter, index) => {
         const coordinate = letter + rowNumber;
 
