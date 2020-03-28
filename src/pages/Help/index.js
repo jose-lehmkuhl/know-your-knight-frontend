@@ -14,15 +14,15 @@ const Help = () => {
 
     const steps = [
         {
-          label: 'Click on the "Go TO BOARD" button to get to the board page.',
+          text: 'Click on the "Go TO BOARD" button to get to the board page.',
           imgPath: help01
         },
         {
-          label: "Click on the desired cell to select knights's initial position.",
+          text: "Click on the desired cell to select knights's initial position.",
           imgPath: help02
         },
         {
-          label: "Click on the button below to show/hide possible knigh's position in 2 turns",
+          text: "Click on the button below to show/hide possible knigh's position in 2 turns",
           imgPath: help03
         }
       ];
@@ -43,9 +43,8 @@ const Help = () => {
             <Grid item container direction="column" justify="center" alignItems="center">
                 <Image
                     src={steps[getStep].imgPath}
-                    alt={steps[getStep].label}
                 />
-                <HelpText align="center">{steps[getStep].label}</HelpText>
+                <HelpText align="center">{steps[getStep].text}</HelpText>
             </Grid>
             <Grid item container justify="center">
                 <StyledStepper
