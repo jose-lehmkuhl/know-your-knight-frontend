@@ -3,6 +3,10 @@ import { Grid, Typography,MobileStepper } from '@material-ui/core'
 
 export const Wrapper = styled(Grid)`
     padding: 1rem;
+
+    a {
+        text-decoration: none;
+    }
 `
 
 export const Image = styled.img`
