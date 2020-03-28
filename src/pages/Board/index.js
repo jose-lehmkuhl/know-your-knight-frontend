@@ -12,7 +12,7 @@ const Board = () => {
             <Chessboard showDestinations={getDestination}/>
             <Grid container item  xs={5} justify="center">
                 <Button variant="contained" color="primary" onClick={() => setDestination(!getDestination)} fullWidth>
-                    Show possible destinations in 2 turns
+                    {getDestination ? 'Hide' :'Show'} possible positions in 2 turns
                 </Button>
             </Grid>
         </Wrapper>
