@@ -5,24 +5,25 @@ import {KeyboardArrowLeft ,KeyboardArrowRight} from '@material-ui/icons';
 import { Link } from 'react-router-dom'
 import { Wrapper,Image,HelpText,StyledStepper } from './styles'
 
+import help01 from '../../assets/images/help01.png'
+import help02 from '../../assets/images/help02.png'
+import help03 from '../../assets/images/help03.png'
+
 const Help = () => {
     const [getStep, setStep] = useState(0)
 
     const steps = [
         {
-          label: 'Open Chessboard',
-          imgPath:
-          'https://via.placeholder.com/640x360',
+          label: 'Click on the "Go TO BOARD" button to get to the board page.',
+          imgPath: help01
         },
         {
-          label: 'Select Knight position',
-          imgPath:
-            'https://via.placeholder.com/640x360',
+          label: "Click on the desired cell to select knights's initial position.",
+          imgPath: help02
         },
         {
-          label: 'Check results',
-          imgPath:
-            'https://via.placeholder.com/640x360'
+          label: "Click on the button below to show/hide possible knigh's position in 2 turns",
+          imgPath: help03
         }
       ];
 
@@ -44,7 +45,7 @@ const Help = () => {
                     src={steps[getStep].imgPath}
                     alt={steps[getStep].label}
                 />
-                <HelpText>{steps[getStep].label}</HelpText>
+                <HelpText align="center">{steps[getStep].label}</HelpText>
             </Grid>
             <Grid item container justify="center">
                 <StyledStepper
