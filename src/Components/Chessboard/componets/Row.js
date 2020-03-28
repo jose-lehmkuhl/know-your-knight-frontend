@@ -12,6 +12,7 @@ const renderRow = () => {
         return (
             <Cell
                 key={coordinate}
+                coordinate={coordinate}
                 withKnight={knightPosition===coordinate}
                 color={(rowNumber+index) % 2 === 0}
                 destination={destinations.includes(coordinate)}
