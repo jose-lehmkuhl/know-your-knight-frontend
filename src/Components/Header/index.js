@@ -11,7 +11,7 @@ const Header = () => (
             <Grid container item xs={12} justify="center" alignItems="center">
             <FontAwesomeIcon icon={faChessKnight} size="2x"/>
                 <Typography variant="h4">
-                    Knight Moves
+                    Know Your Knight
                 </Typography>
             <FontAwesomeIcon icon={faChessKnight} size="2x" flip="horizontal"/>
             </Grid>
